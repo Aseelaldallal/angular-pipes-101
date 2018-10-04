@@ -7,6 +7,8 @@ import { PipeTransform, Pipe } from "@angular/core";
 })
 export class ShortenPipe implements PipeTransform {
 
+     // you can add more parameters
+     // in template just add another colon and add the parameter
      transform(value: any, limit: number) {
           if (value.length > limit ) {
                return value.substr(0, limit) + "...";
